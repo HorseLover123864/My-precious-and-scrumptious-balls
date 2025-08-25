@@ -1,6 +1,8 @@
+/*This is a CSS comment*/
 .amongus{
-    font-size: 50px;
+    font-size: 20px;
     color:blue;
+    text-align: center;
 }
 
 .headings{
@@ -16,4 +18,16 @@
 
 body{
     background-color: aliceblue;
+}
+
+.poem{
+    text-align: left;
+    color:red;
+    outline: darkblue;
+
+}
+
+#idtest{
+    text-align: center;
+    white-space: normal; 
 }
