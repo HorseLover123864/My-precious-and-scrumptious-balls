@@ -1,0 +1,79 @@
+<!DOCTYPE html> <!--determines the version of HTML, in this case HTML5-->
+<html lang ="vi-VN"> <!--lang is used to declare the language of the page => assist search engines and browsers-->
+<!--This is a comment-->
+<!--semantic HTML makes code more meaningful for browsers, search engines, and assistive technologies-->
+<!--semantic means the element’s name conveys its meaning or role in the document, not just how it looks-->
+    <link rel="stylesheet" type="text/css" href="style.css"/> <!--This includes external CSS file, in this case its style.css, type="text/css" is optional in HTML5-->
+
+<head>
+    <title>Welcome! This is the title</title> <!--Everything in Head does not appear?--> 
+</head>
+
+<body style="background-color: cornflowerblue;">
+    This is the body
+<hr>
+    <a href="https://leetcode.com/explore/">This is a link</a> <!--The href specifies the URL or path that a hyperlink (<a>) or certain other elements (like <link>) points to--><br>
+    
+        <i>This sentence is italicized</i><br>  <!--not semantic-->
+        <b>This sentence is bold</b><br>        <!--not semantic-->
+        <em>This sentence is semantically italicized</em><br>
+        <strong>This sentence is semantically bold</strong><br>
+
+        <p>This is a normal paragraph</p> <!--<p>Paragraph = semantic meaning, raw text = loose content-->
+        
+        <p class="amongus"> <!--Classes are basically used to sort things out via CSS-->
+            This is a paragraph that has a class of amongus
+        </p>
+        <div> <!--<div> is a generic container element in HTML. Non-semantic, its main purpose is to group other elements together so you can apply CSS styling or JavaScript logic to that group.-->
+        This is a division aka a grouped element
+        </div><br>
+   
+        <div title="This is an image tooltip", class="imagett"> <!--The "tilte" attribute works with every element, it defines extra info when hovered-->
+            <img src="canhcut.png" alt="This is an alt text" width="150" height="150"> <!--This is an image, alt = alternative text that replaces the unloaded image-->
+        </div>
+<hr>
+    <div class="headings">
+        <h1>This is the first heading</h1> <!--This is the largest size-->
+        <h2>This is the second heading</h2>
+        <h3>This is the third heading</h3>
+        <h4>This is the fourth heading</h4>
+        <h5>This is the fifth heading</h5>
+        <h6>This is the sixth heading</h6> <!--This is the smallest size-->
+    </div>
+<hr>
+        <pre style="color: aqua; font-size: large; text-align:center;"> <!--This simply is pre-formatted, works like normal but with a different text style-->
+            This is a world
+        
+            Where i am the best
+        
+            I will rise to the top
+
+            Without competition
+        </pre>
+<hr>
+    <p style="color: darkorange; font-size: 30px;">This is a sentence that used the style attribute</p> <!--multiple styles in 1 line is possible-->
+    <p style="background-color: blue;">This is a paragraph with the background-color attribute</p>
+    <p style="font-size: 200%;">This is a paragraph with the font size of 200%</p>
+    <p style="text-align: center;">This is a paragraph with text align center</p>
+<hr>
+        <small>This is a small text</small> <!--Reduces the size of the text?--><br>
+        <mark>This is a marked text</mark> <!--Highlighter--><br>
+        <del>This is a deleted text</del> <!--Strikethrough--><br>
+        <ins>This is an inserted text</ins> <!--Underline-->
+        <p>This is a subscript: H<sub>2</sub>O</p> <!--subscript = smaller and lower characters-->
+        <p>This is a superscript<sup>2</sup></p> <!--opposite of subscript--><hr>
+
+        <p>This is a quote block:</p>
+        <blockquote cite="https://www.goodreads.com/quotes", style="text-wrap:inherit; font-size: large; align-self: center;"><em>“I'm selfish, impatient and a little insecure. I make mistakes, I am out of control and at times hard to handle. But if you can't handle me at my worst, then you sure as hell don't deserve me at my best.”
+        ― Marilyn Monroe</em></blockquote> <!--Quote but block-->
+
+        <q>This is a short quote</q>
+        <p>This is an <abbr title="Abbreviation">Abbr</abbr></p>
+        <address>
+            Written by my ass<br>
+            Check me out on discord: <a href="https://discord.gg/kg9Ey3cJ">JoeHockens</a>
+        </address>
+        
+
+</body>
+</html>
