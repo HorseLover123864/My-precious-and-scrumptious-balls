@@ -1,10 +1,48 @@
 /*This is a CSS comment*/
 
 /*Id is selected with #[idname]; class is selected with .[classname]*/
+
+/*
+display: flex; a powerful way to arrange, align, and distribute elements inside a container, without needing floats or complicated positioning.
+Flexbox usage:
+1. Aligns items in a row or column easily.
+2. Controls spacing automatically.
+3. Aligns items vertically without hacks
+4. Makes items flexible in size.
+*/
+
+body{
+    background-color: cornflowerblue;
+}
+
+body > h3{
+    color: yellow;
+}
+
+.boxcenter{
+    display: flex;
+    justify-content: center;
+}
+
 .amongus{
-    font-size: 20px;
+    display: inline-flex; /*This wraps the border around the text/paragraph; it works exactly like inline-block, but has the power of flexbox*/
+    font-size:medium;
+    font-family: 'Times New Roman', Times, serif;
     color:blue;
     text-align: center;
+    border: 2px solid white; /*border: [thickness] [style] [color]*/
+    padding: 10px; /*The CSS padding property defines a padding (space) between the text and the border.*/
+    margin: 5px; /*The CSS margin property defines a margin (space) outside the border.*/
+}
+
+#idtest{
+    display: inline-flex;
+    font-size: medium;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    border: 2px solid white;
+    padding: 10px;
+    width: 400px;
 }
 
 .headings{
@@ -18,18 +56,10 @@
     font-size: small;
 }
 
-body{
-    background-color: aliceblue;
-}
 
 .poem{
     text-align: left;
     color:red;
     outline: darkblue;
 
-}
-
-#idtest{
-    text-align: center;
-    white-space: normal; 
 }

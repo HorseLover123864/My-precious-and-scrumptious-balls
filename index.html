@@ -12,15 +12,12 @@
 <!--There are inline CSS, internal CSS and external CSS. For this page i'm gonna use external CSS for the purpose of clarity and tidiness-->
 
 <head>
-    <title>This is the title</title> <!--Everything in Head does not appear?--> 
+    <title>This is the title</title> <!--Everything in Head does not appear?-->
+    <meta charset="UTF-8">
 </head>
 
-<body style="background-color: cornflowerblue;">
-    This is the body<br>
-
-    <p>This is a <a href="https://leetcode.com/explore/">link</a></p><br>
-    <!--The href specifies the URL or path that a hyperlink (<a>) or certain other elements (like <link>) points to-->
-    
+<body >
+    <h1>This is the body</h1><br>
         <i>This sentence is italicized</i><br>  <!--not semantic-->
         <b>This sentence is bold</b><br>        <!--not semantic-->
 
@@ -28,91 +25,123 @@
         <strong>This sentence is semantically bold</strong><br>
         <!--semantic HTML makes code more meaningful for browsers, search engines, and assistive technologies-->
         <!--semantic means the element’s name conveys its meaning or role in the document, not just how it looks-->
-        <hr>
-        <p>This is a normal paragraph</p> <!--Paragraph = semantic meaning, raw text = loose content-->
-        
-        <p class="amongus">This is a paragraph with a class. A class is a reusable label. Can be applied to many elements.<br>
-            For example:<br>
-            &lt;p class="highlight"&gt;First&lt;/p&gt; <br>
-            &lt;p class="highlight"&gt;Second&lt;/p&gt;<br>
-        </p><br>
-        <!--Classes are basically used to sort things out via CSS-->
-         <div id="idtest">
-            This is a division with an ID. An id is a unique identifier. Used for one single element only.<br>
-            For example: <br>
-            &lt;p id="first"&gt;Paragraph 1&lt;/p&gt; <br>
-            &lt;p id="second"&gt;Paragraph 2&lt;/p&gt;<br>
-        </div><hr>
 
+        <p>Dưới đây là một câu bằng tiếng việt:</p><br>
+        <p><q>Chú bé đi quán võ, xếp ly rượu ấm, thở hắt, ngỡ ngàng vì phở quê.</p>
+<hr>
+    <h3>Links:</h3>
+        <p>
+            <a href="https://leetcode.com/explore/" target="_blank" style="color: orange; font-weight: bold;">This</a> is a link that opens in a new tab
+        </p>
+        <!--The href specifies the URL or path that a hyperlink (<a>) or certain other elements (like <link>) points to-->
+        <p><a href="https://leetcode.com/explore/" target="_self" style="color: red; font-weight: bold;">This</a> is a link that opens in the same tab</p>
+        <p><a href="https://leetcode.com/explore/" target="_parent" style="color: blue; font-weight: bold;">This</a> is a link that opens in the parent frame</p>
+        <p><a href="https://leetcode.com/explore/" target="_top" style="color: greenyellow; font-weight: bold;">This</a> is a link that opens in the full body of the window</p>
+        <!-- Common values for 'target':
+        _self → Default. Opens in the same tab.
 
+        _blank → Opens in a new tab/window.
 
-        <div> <!--<div> is a generic container element in HTML. Non-semantic, its main purpose is to group other elements together so you can apply CSS styling or JavaScript logic to that group.-->
-        This is a division aka a grouped element
-        </div><br>
+        _parent → Opens in the parent frame.
+
+        _top → Opens in the full body of the window (breaks out of frames).
+
+        framename → Opens in a specific frame if you named it.-->
+    
+<hr>
+    <h3>Divisions:</h3>        
+
+        <div> This is a division aka a grouped element</div><br>
+        <!--<div> is a generic container element in HTML. Non-semantic, its main purpose is to group other elements together so you can apply CSS styling or JavaScript logic to that group.-->
+        <div class="boxcenter">
+            <div id="idtest">
+                This is a division with an ID. An id is a unique identifier. Used for one single element only.<br>
+                For example: <br>
+                &lt;p id="first"&gt;Paragraph 1&lt;/p&gt; <br>
+                &lt;p id="second"&gt;Paragraph 2&lt;/p&gt;<br>
+            </div>
+        </div>
+<hr>
+    <h3>Images and Headings:</h3>        
    
         <div title="This is an image tooltip", class="imagett"> <!--The "tilte" attribute works with every element, it defines extra info when hovered-->
             <img src="canhcut.png" alt="This is an alt text" width="150" height="150"> <!--This is an image, alt = alternative text that replaces the unloaded image-->
+        </div><br>
+
+        <div title="This is an image link"><a href="https://github.com" target="_blank"><img src="https://cdn3.iconfinder.com/data/icons/inficons/512/github.png" width="150" height="150" alt="This is a github redirect link"></a></div>
+
+
+        <div class="headings">
+            <h1>This is the first heading</h1> <!--This is the largest size-->
+            <h2>This is the second heading</h2>
+            <h3>This is the third heading</h3>
+            <h4>This is the fourth heading</h4>
+            <h5>This is the fifth heading</h5>
+            <h6>This is the sixth heading</h6> <!--This is the smallest size-->
         </div>
-<hr>
-    <div class="headings">
-        <h1>This is the first heading</h1> <!--This is the largest size-->
-        <h2>This is the second heading</h2>
-        <h3>This is the third heading</h3>
-        <h4>This is the fourth heading</h4>
-        <h5>This is the fifth heading</h5>
-        <h6>This is the sixth heading</h6> <!--This is the smallest size-->
-    </div>
-<hr>
-        <p>This is a pre-formatted text:</p>
-        <pre class="poem"><!--Works like normal but with a different text style-->
-           <q> A world.
-        
-            Where I will be the best.
-        
-            Rise to the top.
-            
-            Emerge from the bottom.
 
-            Without competition.</q>
-        </pre>
 <hr>
-    <p style="color: darkorange; font-size: 30px;">This is a paragraph with the style attribute</p> <!--multiple styles in 1 line is possible-->
-    
-    <p style="background-color: blue; color: white;">This is a paragraph with the background-color attribute</p>
-    
-    <p style="font-size: 200%;">This is a paragraph with the font size of 200%</p>
-    
-    <p style="text-align: center;">This is a paragraph with text align center</p>
+    <h3>Paragraphs and styles:</h3>
 
-    <p style="border:5px solid;">This is a paragraph with a border of 5px</p> <!--border: [thickness] [style] [color]-->
+        <p>This is a normal paragraph</p> <!--Paragraph = semantic meaning, raw text = loose content-->
+        
+        <div class="boxcenter">
+            <p class="amongus">This is a paragraph with a class. A class is a reusable label. Can be applied to many elements.<br>
+                For example:<br>
+                &lt;p class="highlight"&gt;First&lt;/p&gt; <br>
+                &lt;p class="highlight"&gt;Second&lt;/p&gt;<br>
+            </p>
+        </div>
+
+        <p style="color: darkorange; font-size: 30px;">This is a paragraph with the style attribute</p> <!--multiple styles in 1 line is possible-->
+    
+        <p style="background-color: blue; color: white; display: inline-block;">This is a paragraph with the background-color attribute with the display of inline-block</p>
+    
+        <p style="font-size: 200%;">This is a paragraph with the font size of 200%</p><br>
+
+        <p style="text-align: left;">This is a paragraph with text align left</p>
+        <p style="text-align: center;">This is a paragraph with text align center</p>
+        <p style="text-align: right;">This is a paragraph with text align right</p><br>
+
+        <p style="display:inline-block; border:3px solid;">This is a paragraph with a border of 3px</p> <!--border: [thickness] [style] [color]-->
+
 <hr>
+    <h3>Plain texts:</h3>
         <small>This is a small text</small> <!--Reduces the size of the text?--><br>
         <mark>This is a marked text</mark> <!--Highlighter--><br>
         <del>This is a deleted text</del> <!--Strikethrough--><br>
         <ins>This is an inserted text</ins> <!--Underline-->
         <p>This is a subscript: H<sub>2</sub>O</p> <!--subscript = smaller and lower characters-->
-        <p>This is a superscript<sup>2</sup></p> <!--opposite of subscript--><hr>
-
+        <p>This is a superscript<sup>2</sup></p> <!--opposite of subscript-->
+        <q>This is a short quote</q>
         <p>This is a quote block:</p>
         <blockquote cite="https://www.goodreads.com/quotes", style="text-wrap:inherit; font-size: large; align-self: center;">
+             
             <em>“I'm selfish, impatient and a little insecure. I make mistakes,
                 I am out of control and at times hard to handle. 
                 But if you can't handle me at my worst,
                 then you sure as hell don't deserve me at my best.”
-                    ― Marilyn Monroe</em></blockquote> <!--Quote but block-->
+                ― Marilyn Monroe</em></blockquote> <!--Quote but block-->
 
-        <q>This is a short quote</q>
         <p>This is an <abbr title="Abbreviation">Abbr</abbr></p><br>
-        <address> <!--defines the contact information for the author/owner of a document or an article, it can be anything: email address, URL, physical address, phone number, social media handle, etc-->
-            This is an address<br>
-            Written by JoeHockens<br>
-            Check me out on discord: <a href="https://discord.gg/kg9Ey3cJ">JoeHockens</a>
-        </address><br>
+            
+        <p>This is a pre-formatted text:</p><!--Renders the exact same way the code should look in your coding space-->
+<pre class="poem" style="border: black solid 1px; display: inline-flex;">
+Time     Action
+10:00    Start
+10:30    Break 
+</pre>
+
+
         
         <p>This is an artwork by me:</p>
+        
         <img src="masterpiece.png" alt="Finest piece of art" width="600" height="300">
+        
         <p><cite>The combination of everything you could ever imagined</cite> by JoeHockens</p> <!--Cite is used to define the title of a creative work-->
+        
         <bdo dir="rtl">This text is written from right to left</bdo> <!--basically reverse text-->
+        
         <p style="color: rgb(255,255,0);">This is a paragraph that uses RGB</p>
         <!--rgb(red, green, blue)-->
 
@@ -130,6 +159,10 @@
         <p style="color: #ff0000;">This is a paragraph that uses Hexadecimal Notation (HEX values)</p>
         <!--#RRGGBB (hexadecimal notation for red, green, blue);(00–FF) is equivalent to 0–255 in RGB.-->
 
-       
+            <address style="display:inline-block ;border: 1px solid purple; color: darkorchid;"> <!--defines the contact information for the author/owner of a document or an article, it can be anything: email address, URL, physical address, phone number, social media handle, etc-->
+                This is an address<br>
+                Written by JoeHockens<br>
+                Check me out on discord:<a href="https://discord.gg/kg9Ey3cJ" target="_blank" style="color: darkblue;"> MyDiscordServer</a>
+            </address><br>
 </body>
 </html>
