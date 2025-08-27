@@ -27,7 +27,7 @@ body > h2{ /*gets all the h2 tags 1 level deep in body, think of it as mining do
     color: red;
     text-shadow: 1px 1px black;
 }
-
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 .boxcenter{
     display: flex;
     justify-content: center;
@@ -47,6 +47,8 @@ body > h2{ /*gets all the h2 tags 1 level deep in body, think of it as mining do
     height: 100%;
     object-fit: contain;
 }
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 .button{
     display: flex;
@@ -87,7 +89,13 @@ body > h2{ /*gets all the h2 tags 1 level deep in body, think of it as mining do
     right: 20px;
 }
 
-#popup{ /*used for general popup*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.links{
+    color: rgb(0, 174, 255);
+}
+
+#popup{ /*general popup*/
     display: none;
     position: fixed;
     top: 80px;
@@ -106,6 +114,27 @@ body > h2{ /*gets all the h2 tags 1 level deep in body, think of it as mining do
     margin: 5px; /*The CSS margin property defines a margin (space) outside the border.*/
 }
 
+body.dark .amongus{
+    display: inline-flex; /*This wraps the border around the text/paragraph; it works exactly like inline-block, but has the power of flexbox*/
+    font-size:medium;
+    text-align: center;
+    border: 2px solid white; /*border: [thickness] [style] [color]*/
+    padding: 10px; /*The CSS padding property defines a padding (space) between the text and the border.*/
+    margin: 5px; /*The CSS margin property defines a margin (space) outside the border.*/
+}
+
+.infograph{
+    width: 700px;
+    padding:15px;
+    border: 2px solid black;
+}
+
+body.dark .infograph{
+    width: 700px;
+    padding:15px;
+    border: 2px solid white;
+}
+
 #idtest{
     display: inline-flex;
     font-size: medium;
@@ -114,6 +143,16 @@ body > h2{ /*gets all the h2 tags 1 level deep in body, think of it as mining do
     padding: 10px;
     width: 400px;
 }
+
+body.dark #idtest{
+    display: inline-flex;
+    font-size: medium;
+    text-align: center;
+    border: 2px solid white;
+    padding: 10px;
+    width: 400px;
+}
+
 
 #headings{
     color:aqua;
