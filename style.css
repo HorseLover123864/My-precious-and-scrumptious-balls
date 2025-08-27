@@ -13,11 +13,17 @@ Flexbox usage:
 
 /*Websites' default font-family is Times New Roman*/
 body{
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: cornflowerblue;
+    background: white;
+    color: rgb(78, 70, 70);
+    font-family: Arial, Helvetica, sans-serif; /*sets new default font, the original default font is Times New Roman.*/
 }
 
-body > h2{
+body.dark{
+    background: rgb(48, 56, 133);
+    color:white
+}
+
+body > h2{ /*gets all the h2 tags 1 level deep in body, think of it as mining down 1 level and looking for the things you need.*/
     color: red;
     text-shadow: 1px 1px black;
 }
@@ -48,8 +54,9 @@ body > h2{
     align-items: center;
     width: 50px;
     height: 50px;
+    border-radius: 50%;
     /*color: aliceblue;
-    border-radius: 25%;
+   
     border-width: 1.5px;
     box-shadow: 1px 1px darkblue;
     background: linear-gradient(to top, rgb(17, 128, 255), cyan);
@@ -67,9 +74,19 @@ body > h2{
 .returnbutton{
     width: 50px;
     height: 50px;
+    border-radius: 50%;
+    text-align: center;
 }
 
-
+#popup{ /*used for general popup*/
+    display: none;
+    position: fixed;
+    top: 20px;
+    right: 10px;
+    padding: 5px;
+    background: green;
+    border: 1px solid black;
+}
 
 .amongus{
     display: inline-flex; /*This wraps the border around the text/paragraph; it works exactly like inline-block, but has the power of flexbox*/

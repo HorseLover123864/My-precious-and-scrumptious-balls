@@ -16,7 +16,7 @@
     <!--There are inline Js, internal Js and external Js.-->
 </head>
 
-<body >
+<body id="body">
     <h1 style="color: gold; text-shadow: 2px 1px 2px black, 2px 1px 1px darkgoldenrod;">This is the body</h1><br>
     <!--text-shadow's syntax: text-shadow: offset-x offset-y blur-radius color;
     
@@ -76,7 +76,7 @@
     <h2 id="Division" class="textcenter">Divisions:</h2><!--DIVISION-DIVISION-DIVISION-DIVISION-DIVISION-DIVISION-DIVISION-DIVISION-DIVISION-DIVISION-DIVISION-DIVISION-DIVISION--->   
 
         
-        <div> This is a "division" -> a grouped element. Short form &lt;div&gt;</div><br>
+        <div>A "division" = a grouped element. Extremely useful. Short form &lt;div&gt;</div><br>
         <!--<div> is a generic container element in HTML. Non-semantic, its main purpose is to group other elements together so you can apply CSS styling or JavaScript logic to that group.-->
         <div class="boxcenter">
             <div id="idtest">
@@ -93,6 +93,26 @@
         
         <p>This is a paragraph. Short form &lt;p&gt;</p> <!--Paragraph = semantic meaning, raw text = loose content-->
         
+    <div class="boxcenter" style="text-wrap: wrap;">
+        <p style="width:700px; padding:15px; border: 2px solid black;">Evidence That Nighttime Baths Can Be Good:<br>
+                <b>1. Improved Sleep Quality and Faster Sleep Onset:</b><br>
+
+                    Biological cooling effect: Warm baths or showers taken 1-2 hours before bedtime help trigger the body's natural cooling—key for falling asleep faster and sleeping better.<br>
+                    A systematic review found that even 10-minute warm baths (40-42 °C) before bed improve sleep efficiency and reduce time to fall asleep.<br>
+                    Popular Mechanics explains that the warming effect promotes heat loss when you exit the bath, aligning with the circadian rhythm and aiding sleep.<br>
+                    Verywell Health confirms that warming the skin before bed accelerates the core-temperature drop and improves sleep quality.<br>
+                    Time.com notes that evening showers support sleep, reduce sleep onset, and enhance rest when timed and heated properly.<br><br>
+
+                <b>2. Relaxation and Better Sleep Hygiene:<br></b>
+                    A warm bath can help relax muscles, ease stress, and act as a calming bedtime routine or signal to start winding down.<br>
+                    A structured nighttime ritual that includes bathing may support your body's sleep cues and improve overall nightly rest.<br>
+                        <span style="display:block; margin-top: 10px; text-align: end;"><small><cite><b>Source: ChatGPT</b></bd></cite></small></span>
+
+        </p>
+    </div>
+    
+
+
         <div class="boxcenter">
             <p class="amongus">This is a paragraph with a class. A class is a reusable label. Can be applied to many elements.<br>
                 For example:<br>
@@ -115,8 +135,9 @@
 
 <hr>
     <h2 id="Plain text" class="textcenter">Plain texts:</h2> <!--PLAINTEXT-PLAINTEXT-PLAINTEXT-PLAINTEXT-PLAINTEXT-PLAINTEXT-PLAINTEXT-PLAINTEXT-PLAINTEXT-PLAINTEXT--->
-        
-    
+
+
+
         <small>This is a small text</small> <!--Reduces the size of the text?--><br>
         <mark>This is a marked text</mark> <!--Highlighter--><br>
         <del>This is a deleted text</del> <!--Strikethrough--><br>
@@ -158,7 +179,7 @@
         
         <p style="color: #ff0000;">This is a paragraph that uses Hexadecimal Notation (HEX values)</p><br>
         <!--#RRGGBB (hexadecimal notation for red, green, blue);(00–FF) is equivalent to 0–255 in RGB.-->
-
+        
 <pre class="pretext" style="border: black solid 1px; display: inline-flex;">
 Time     Action
 10:00    Start
@@ -172,14 +193,14 @@ Time     Action
 
         <div title="This is an image tooltip" class="imagett" > <!--The "tilte" attribute works with every element, it defines extra info when hovered-->
         
-            <img loading="lazy" src="canhcut.png" alt="This is an alt text" width="150" height="150"> <!--This is an image, alt = alternative text that replaces the unloaded image-->
+            <img loading="lazy" src="IMAGES/canhcut.png" alt="This is an alt text" width="150" height="150"> <!--This is an image, alt = alternative text that replaces the unloaded image-->
         
         </div><br>
 
 
-        <div title="This is an image link"><a href="https://github.com" target="_blank"><img loading="lazy" src="GitHubicon.png" width="150" height="150" alt="This is a github redirect link" style="border-radius: 50% ;"></a></div>
+        <div title="This is an image link"><a href="https://github.com" target="_blank"><img loading="lazy" src="IMAGES/GitHubicon.png" width="75" height="75" alt="This is a github redirect link" style="border-radius: 50% ;"></a></div>
         <!--border-radius rounds things up; border-radius: [insert pixels or percentage]-->
-
+        <div title="This is an image link"><a href="https://github.com" target="_blank"><img loading="lazy" src="IMAGES/facebookicon.png" width="75" height="75" alt="This is a github redirect link" style="border-radius: 50% ;"></a></div>
         <div id="headings">
             <h1>This is the first heading</h1> <!--This is the largest size-->
             <h2>This is the second heading</h2>
@@ -192,28 +213,37 @@ Time     Action
 
             <p>This is an artwork by me:</p>
         
-                <div class="boxcenter"><img loading="lazy" src="masterpiece.png" alt="Finest piece of art" width="600" height="300"></div>
+                <div class="boxcenter"><img loading="lazy" src="IMAGES/masterpiece.png" alt="Finest piece of art" width="600" height="300"></div>
         
             <p style="text-align: center;"><cite>The combination of everything you could ever imagine</cite> by JoeHockens</p><br> <!--Cite is used to define the title of a creative work-->
 
 
-
+<!--MAKE A DARK MODE BUTTON.-->
 
 <hr>
     <h2 id="Button" class="textcenter">Buttons:</h2> <!--BUTTONS-BUTTONS-BUTTONS-BUTTONS-BUTTONS-BUTTONS-BUTTONS-BUTTONS-BUTTONS-BUTTONS-BUTTONS-BUTTONS-BUTTONS-BUTTONS-->
 
-        <p>These buttons work on click:</p>
-        <button class="button" onclick="hello()"><img class="png" src="canhcut.png" title="Alert"></button>
-        <button class="button" onclick="window.location.href='https://dictionary.cambridge.org';"><img class="png" src="CambridgeDictionaryIcon.png" title="CambridgeDictionaryIcon"></button>
-        <button class="button" onclick="console.log('Hi console!')"><img class="png" src="console-21.png" title="Prints to the console"></button><br>
+        <p>These buttons work on click, click to see what they do:</p>
+        <button class="button" style="position: absolute; left: 15px;"  title="Alert" onclick="hello()"><img class="png" src="IMAGES/canhcut.png"></button>
+        <button class="button" style="position: absolute; left: 80px;" title="Dictionary" onclick="goCambridge()"><img class="png" src="IMAGES/CambridgeDictionaryIcon.png"></button>
         
-        <p>These buttons work on hover</p>
-        <button class="button" title="MouseEnter" onmouseenter="console.log('I was hovered!')"></button><!--Prints on enter-->
-        <button class="button" title="Mouseleave" onmouseleave="console.log('The mouse left me!')"></button><!--Prints on leave-->
-        <button class="button" title="MouseMove" onmousemove="console.log('I was moved!')"></button> <!--Prints everytime the mouse moved inside of it-->
+        <button class="button" style="position: absolute; left: 145px;" title="Pop up test" onclick="showPopup()">Pop up</button>
+        <div id="popup">Successful</div>
+
+        <button class="button"  style="position: absolute; left: 210px;" title="Print console" onclick="print()"><img class="png" src="IMAGES/console-21.png"></button>
+        <!--Window.location.href=""; is used for replacing the current page with the new URL
+            whereas Window.open("...","_blank/_self"); is used to open the link directly to a new tab or same tab, similar to target="_blank/_self"-->
+
+        <button class="button" style="position: absolute; left: 275px;" title="Dark Mode" onclick="DarkMode()">Go dark</button><br><br>
+
+
+        <p>These buttons work on hover, F12 to check console:</p>
+        <button class="button" title="MouseEnter" onmouseenter="mouseEnter()">Enter</button><!--Prints on enter-->
+        <button class="button" title="Mouseleave" onmouseleave="mouseLeave()">Leave</button><!--Prints on leave-->
+        <button class="button" title="MouseMove" onmousemove="mouseHover()">Hover</button> <!--Prints everytime the mouse moved inside of it-->
         
-        <p>There is a button on your bottom right.</p>
-        <div class="returnbuttonbox"><button class="returnbutton" title="Go back up" onclick="window.location.href='#Bookmark'"></button></div> 
+        <div class="returnbuttonbox"><button class="returnbutton" title="Go back up" onclick="window.location.href='#Bookmark'">Go up</button></div> 
+
 <hr>
     <h2 id="" class="textcenter"></h2>
 
