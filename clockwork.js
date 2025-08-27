@@ -33,7 +33,30 @@ function showPopup(){ //[name]() will be used to call for this function to work.
 DefaultColor = "White";
 function DarkMode(){
     const body = document.getElementById("body");
-    document.body.classList.toggle("dark");
+    document.body.classList.toggle("dark"); //toggle("dark") says if "dark" is not in the list = add it and vice versa.
+    /*classList is a special object that holds all the CSS classes currently applied to that element.
+    For example, if your <body> looks like this:
+            <body class="dark theme">
+    then document.body.classList contains "dark" and "theme".
+*/
+}
+
+function goDown(){
+    window.scrollTo({top:0, left:0, behavior: "smooth" }); //window.scrollTo(x, y)
+    /*Takes 2 arguments:
+    x = horizontal position(pixels from the left)
+    y = vertical position(pixels from the top)
+    
+    */
+}
+
+function goUp(){
+    window.scrollTo({top: document.body.scrollHeight, left:0, behavior: "smooth" }); //window.scrollTo(x, y)
+    /*Takes 2 arguments:
+    x = horizontal position(pixels from the left)
+    y = vertical position(pixels from the top)
+    document.body.scrollHeight gives the total height of the page content, including the part not visible on the screen.
+    */
 }
 
 function goCambridge(){

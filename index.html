@@ -29,7 +29,7 @@
     color (optional) → color of the shadow (default = text color)-->    
 
 <br>
-    <h2 class="textcenter" id="Bookmark">Bookmarks</h2><!--BOOKMARK-BOOKMARK-BOOKMARK-BOOKMARK-BOOKMARK-BOOKMARK-BOOKMARK-BOOKMARK-BOOKMARK-BOOKMARK-BOOKMARK-BOOKMARK--->
+    <h2 class="textcenter">Bookmarks</h2><!--BOOKMARK-BOOKMARK-BOOKMARK-BOOKMARK-BOOKMARK-BOOKMARK-BOOKMARK-BOOKMARK-BOOKMARK-BOOKMARK-BOOKMARK-BOOKMARK--->
 
 
     <p>About <a href="#Link">Links</a></p>
@@ -81,12 +81,12 @@
         <div class="boxcenter">
             <div id="idtest">
                 This is a division with an ID. An id is a unique identifier. Used for one single element only.<br>
-                For example: <br>
+                <br>For example: <br>
                 &lt;p id="first"&gt;Paragraph 1&lt;/p&gt; <br>
                 &lt;p id="second"&gt;Paragraph 2&lt;/p&gt;<br>
             </div>
         </div>
-
+    <br>
 <hr>
     <h2 id="Paragraph&style" class="textcenter">Paragraphs and styles:</h2><!--PARAGRAPH&STYLE-PARAGRAPH&STYLE-PARAGRAPH&STYLE-PARAGRAPH&STYLE-PARAGRAPH&STYLE-PARAGRAPH&STYLE-PARAGRAPH&STYLE--->
 
@@ -106,20 +106,32 @@
                 <b>2. Relaxation and Better Sleep Hygiene:<br></b>
                     A warm bath can help relax muscles, ease stress, and act as a calming bedtime routine or signal to start winding down.<br>
                     A structured nighttime ritual that includes bathing may support your body's sleep cues and improve overall nightly rest.<br>
-                        <span style="display:block; margin-top: 10px; text-align: end;"><small><cite><b>Source: ChatGPT</b></bd></cite></small></span>
+                        <span style="display:block; margin-top: 10px; text-align: end;"><small><cite><b>Source: ChatGPT.</b></bd></cite></small></span>
 
         </p>
     </div>
+    <br>
     
-
-
-        <div class="boxcenter">
-            <p class="amongus">This is a paragraph with a class. A class is a reusable label. Can be applied to many elements.<br>
-                For example:<br>
-                &lt;p class="highlight"&gt;First&lt;/p&gt; <br>
-                &lt;p class="highlight"&gt;Second&lt;/p&gt;<br>
-            </p>
-        </div>
+    <div class="boxcenter" style="text-wrap: wrap;">
+        <p style="width:700px; padding:15px; border: 2px solid black;">
+                Mass psychogenic illness (MPI), also called mass sociogenic illness, mass psychogenic disorder, 
+                epidemic hysteria or <b>mass hysteria</b>, involves the spread of illness symptoms through a population
+                where there is no infectious agent responsible for contagion.
+                It is the rapid spread of illness signs and symptoms affecting members of a cohesive group, 
+                originating from a nervous system disturbance involving excitation, loss, or alteration of function, 
+                whereby physical complaints that are exhibited unconsciously have no corresponding organic causes that are known.
+                <span style="display:block; margin-top: 10px; text-align: end;"><small><cite><b>Source: Wikipedia.</b></bd></cite></small></span>
+        </p>
+    </div>
+    <br>
+    
+    <div class="boxcenter">
+        <p class="amongus">This is a paragraph with a class. A class is a reusable label. Can be applied to many elements.<br>
+            <br>For example:<br>
+            &lt;p class="highlight"&gt;First&lt;/p&gt; <br>
+            &lt;p class="highlight"&gt;Second&lt;/p&gt;<br>
+        </p>
+    </div>
     
         <p style="background-color: blue; color: white; display: inline-block;">This is a paragraph with the background-color attribute with the display of inline-block</p>
     
@@ -155,7 +167,7 @@
                 then you sure as hell don't deserve me at my best.”
                 ― Marilyn Monroe</em></blockquote> <!--Quote but block-->
 
-        <p>This is an <abbr title="Abbreviation">Abbr</abbr></p><br>
+        <p>This is an <abbr title="Abbreviation">Abbr</abbr></p>
             
         <p>This is a pre-formatted text:</p><!--Renders the exact same way the code should look in your coding space-->
 
@@ -163,6 +175,7 @@
         <p><bdo dir="ltr">This text is written from left to right</bdo></p>
         <!--basically reverse text-->
         
+        <p>I'm too lazy to change the colors, go dark to see the sentences:</p>
         <p style="color: rgb(255,255,0);">This is a paragraph that uses RGB</p>
         <!--rgb(red, green, blue)-->
 
@@ -177,9 +190,10 @@
         <p style="color: hsla(100, 0%, 100%, 0.5);">This is a paragraph that uses HSLA</p>
         <!--hsla(hue, saturation, lightness, alpha); alpha channel for transparency. (0 = fully transparent, 1 = fully opaque)-->
         
-        <p style="color: #ff0000;">This is a paragraph that uses Hexadecimal Notation (HEX values)</p><br>
+        <p style="color: #ff0000;">This is a paragraph that uses Hexadecimal Notation (HEX values)</p>
         <!--#RRGGBB (hexadecimal notation for red, green, blue);(00–FF) is equivalent to 0–255 in RGB.-->
         
+        <p>This below is a pre-formatted text:</p>
 <pre class="pretext" style="border: black solid 1px; display: inline-flex;">
 Time     Action
 10:00    Start
@@ -190,17 +204,35 @@ Time     Action
 <hr>
     <h2 id="Image&Heading" class="textcenter">Images and Headings:</h2><!--IMAGE&HEADINGS-IMAGE&HEADINGS-IMAGE&HEADINGS-IMAGE&HEADINGS-IMAGE&HEADINGS-IMAGE&HEADINGS--->
    
-
-        <div title="This is an image tooltip" class="imagett" > <!--The "tilte" attribute works with every element, it defines extra info when hovered-->
+        <div style="display: flex; gap: 25px">
         
-            <img loading="lazy" src="IMAGES/canhcut.png" alt="This is an alt text" width="150" height="150"> <!--This is an image, alt = alternative text that replaces the unloaded image-->
+            <div title="This is a gif" class="imagett">
+                <img src="https://media.tenor.com/0Qwt9sOgaG8AAAAM/meme-horse.gif" width="150" height="300">
+            </div>
+
+            <div title="This is another gif"><img src="https://media.tenor.com/0pZkpZFmXEgAAAAM/uma-musume.gif" width="300" height="300"></div>
+            <div title="This is another gif"><img src="https://media.tenor.com/t6izAvf5JBMAAAAj/pretty-derby-matikane.gif" width="300" height="300"></div>
+            <div title="This is an image" class="imagett" > <!--The "tilte" attribute works with every element, it defines extra info when hovered-->
+            
+                <img loading="lazy" src="IMAGES/canhcut.png" alt="This is an alt text" width="150" height="150"> <!--This is an image, alt = alternative text that replaces the unloaded image-->
+            
+            </div><br>
+
+
+            <div title="This is an image link"><a href="https://github.com" target="_blank"><img loading="lazy" src="IMAGES/GitHubicon.png" width="75" height="75" alt="This is a github redirect link" style="border-radius: 50% ;"></a></div>
+            <!--border-radius rounds things up; border-radius: [insert pixels or percentage]-->
+            
+            <div title="This is an image link"><a href="https://www.facebook.com" target="_blank"><img loading="lazy" src="IMAGES/facebookicon.png" width="75" height="75" alt="This is a github redirect link" style="border-radius: 50% ;"></a></div>
+            
+            
+        </div>
         
-        </div><br>
 
 
-        <div title="This is an image link"><a href="https://github.com" target="_blank"><img loading="lazy" src="IMAGES/GitHubicon.png" width="75" height="75" alt="This is a github redirect link" style="border-radius: 50% ;"></a></div>
-        <!--border-radius rounds things up; border-radius: [insert pixels or percentage]-->
-        <div title="This is an image link"><a href="https://github.com" target="_blank"><img loading="lazy" src="IMAGES/facebookicon.png" width="75" height="75" alt="This is a github redirect link" style="border-radius: 50% ;"></a></div>
+
+        <br>
+        <p><img src="IMAGES/canhcut.png" style="float:left; width: 42px; height: 42px;">This image floats to the left of the text</p>
+        <br>
         <div id="headings">
             <h1>This is the first heading</h1> <!--This is the largest size-->
             <h2>This is the second heading</h2>
@@ -218,34 +250,39 @@ Time     Action
             <p style="text-align: center;"><cite>The combination of everything you could ever imagine</cite> by JoeHockens</p><br> <!--Cite is used to define the title of a creative work-->
 
 
-<!--MAKE A DARK MODE BUTTON.-->
 
 <hr>
     <h2 id="Button" class="textcenter">Buttons:</h2> <!--BUTTONS-BUTTONS-BUTTONS-BUTTONS-BUTTONS-BUTTONS-BUTTONS-BUTTONS-BUTTONS-BUTTONS-BUTTONS-BUTTONS-BUTTONS-BUTTONS-->
 
         <p>These buttons work on click, click to see what they do:</p>
-        <button class="button" style="position: absolute; left: 15px;"  title="Alert" onclick="hello()"><img class="png" src="IMAGES/canhcut.png"></button>
-        <button class="button" style="position: absolute; left: 80px;" title="Dictionary" onclick="goCambridge()"><img class="png" src="IMAGES/CambridgeDictionaryIcon.png"></button>
+        <div style="display: flex; gap:15px">
+            <button class="button" title="Alert" onclick="hello()"><img class="png" src="IMAGES/canhcut.png"></button>
+            <button class="button" title="Dictionary" onclick="goCambridge()"><img class="png" src="IMAGES/CambridgeDictionaryIcon.png"></button>
+            
+            <button class="button" title="Pop up test" onclick="showPopup()">Pop up</button>
+            <div id="popup">Successful</div>
+
+            <button class="button" title="Print console" onclick="print()"><img class="png" src="IMAGES/console-21.png"></button>
+            <!--Window.location.href=""; is used for replacing the current page with the new URL
+                whereas Window.open("...","_blank/_self"); is used to open the link directly to a new tab or same tab, similar to target="_blank/_self"-->
+
+            <div class="fixeddarkbutton"><button class="button" title="Dark Mode" onclick="DarkMode()">Go dark</button></div>
+        </div><br>
+
+
+        <p>These buttons below work on hover, F12 to check console:</p>
+        <div style="display: flex; gap:20px">
+            <button class="button" title="MouseEnter" onmouseenter="mouseEnter()">Enter</button><!--Prints on enter-->
+            <button class="button" title="Mouseleave" onmouseleave="mouseLeave()">Leave</button><!--Prints on leave-->
+            <button class="button" title="MouseMove" onmousemove="mouseHover()">Hover</button> <!--Prints everytime the mouse moved inside of it-->
+        </div>
         
-        <button class="button" style="position: absolute; left: 145px;" title="Pop up test" onclick="showPopup()">Pop up</button>
-        <div id="popup">Successful</div>
-
-        <button class="button"  style="position: absolute; left: 210px;" title="Print console" onclick="print()"><img class="png" src="IMAGES/console-21.png"></button>
-        <!--Window.location.href=""; is used for replacing the current page with the new URL
-            whereas Window.open("...","_blank/_self"); is used to open the link directly to a new tab or same tab, similar to target="_blank/_self"-->
-
-        <button class="button" style="position: absolute; left: 275px;" title="Dark Mode" onclick="DarkMode()">Go dark</button><br><br>
-
-
-        <p>These buttons work on hover, F12 to check console:</p>
-        <button class="button" title="MouseEnter" onmouseenter="mouseEnter()">Enter</button><!--Prints on enter-->
-        <button class="button" title="Mouseleave" onmouseleave="mouseLeave()">Leave</button><!--Prints on leave-->
-        <button class="button" title="MouseMove" onmousemove="mouseHover()">Hover</button> <!--Prints everytime the mouse moved inside of it-->
-        
-        <div class="returnbuttonbox"><button class="returnbutton" title="Go back up" onclick="window.location.href='#Bookmark'">Go up</button></div> 
-
+        <!--SPECIAL BUTTONS-->
+        <div class="fixedupbuttonbox"><button class="button" title="Go back down" onclick="goUp()">Go down</button></div> 
+        <div class="fixeddownbuttonbox"><button class="button" title="Go back up" onclick="goDown()">Go up</button></div> 
+        <!---------------------------------------------------------------------------------------------------------------->
 <hr>
-    <h2 id="" class="textcenter"></h2>
+    <h2 id="" class="textcenter">I don't know what to do next.</h2>
 
 
 
