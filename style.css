@@ -11,12 +11,15 @@ Flexbox usage:
 4. Makes items flexible in size.
 */
 
+/*Websites' default font-family is Times New Roman*/
 body{
+    font-family: Arial, Helvetica, sans-serif;
     background-color: cornflowerblue;
 }
 
-body > h3{
-    color: yellow;
+body > h2{
+    color: red;
+    text-shadow: 1px 1px black;
 }
 
 .boxcenter{
@@ -24,10 +27,38 @@ body > h3{
     justify-content: center;
 }
 
+.boxright{
+    display: flex;
+    justify-content: right;
+}
+
+.textcenter{
+    text-align: center;
+}
+
+.png{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.button{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    /*color: aliceblue;
+    border-radius: 25%;
+    border-width: 1.5px;
+    box-shadow: 1px 1px darkblue;
+    background: linear-gradient(to top, rgb(17, 128, 255), cyan);
+    margin: 0 auto;*/
+}
+
 .amongus{
     display: inline-flex; /*This wraps the border around the text/paragraph; it works exactly like inline-block, but has the power of flexbox*/
     font-size:medium;
-    font-family: 'Times New Roman', Times, serif;
     color:blue;
     text-align: center;
     border: 2px solid white; /*border: [thickness] [style] [color]*/
@@ -39,13 +70,12 @@ body > h3{
     display: inline-flex;
     font-size: medium;
     text-align: center;
-    font-family: 'Times New Roman', Times, serif;
     border: 2px solid white;
     padding: 10px;
     width: 400px;
 }
 
-.headings{
+#headings{
     color:aqua;
     font-style: italic;
     font-family: 'Times New Roman', Times, serif;
@@ -56,10 +86,8 @@ body > h3{
     font-size: small;
 }
 
-
-.poem{
+.pretext{
     text-align: left;
     color:red;
     outline: darkblue;
-
 }

@@ -5,21 +5,41 @@
 <html lang ="vi-VN"> 
 <!--lang is used to declare the language of the page => assist search engines and browsers-->
 
-
-
-
 <head>
     <title>This is the title</title> <!--Everything in Head does not appear?-->
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="style.css"/>
     <!--This includes external CSS file, in this case its style.css, type="text/css" is optional in HTML5-->
     <!--There are inline CSS, internal CSS and external CSS. For this page i'm gonna use external CSS for the purpose of clarity and tidiness-->
-
+    <script src="clockwork.js"></script>
+    <!--This includes external JavaScript file.-->
+    <!--There are inline Js, internal Js and external Js.-->
 </head>
 
 <body >
-    <h1>This is the body</h1><br>
-        <i>This sentence is italicized</i><br>  <!--not semantic-->
+    <h1 style="color: gold; text-shadow: 2px 1px 2px black, 2px 1px 1px darkgoldenrod;">This is the body</h1><br>
+    <!--text-shadow's syntax: text-shadow: offset-x offset-y blur-radius color;
+    
+    offset-x → horizontal shadow position (positive = right, negative = left).
+
+    offset-y → vertical shadow position (positive = down, negative = up).
+
+    blur-radius (optional) → how blurry the shadow is (default = sharp).
+
+    color (optional) → color of the shadow (default = text color)-->    
+<br>
+    <h2 class="textcenter">Bookmarks</h2>
+
+    <p>About <a href="#Link">Links</a></p>
+    <p>About <a href="#Division">Divisions</a></p>
+    <p>About <a href="#Image&Heading">Images and Headings</a></p>
+    <p>About <a href="#Paragraph&style">Paragraphs and styles</a></p>
+    <p>About <a href="#Plain text">Plain texts</a></p>
+    <p>About <a href="#Button">Buttons</a></p>
+<hr>
+    
+
+       <i>This sentence is italicized</i><br>  <!--not semantic-->
         <b>This sentence is bold</b><br>        <!--not semantic-->
 
         <em>This sentence is semantically italicized</em><br>
@@ -27,17 +47,15 @@
         <!--semantic HTML makes code more meaningful for browsers, search engines, and assistive technologies-->
         <!--semantic means the element’s name conveys its meaning or role in the document, not just how it looks-->
 
-        <p>Dưới đây là một câu bằng tiếng việt:</p><br>
+        <p>Dưới đây là một câu tiếng việt bằng tất cả chữ cái tiếng việt:</p>
         <p><q>Chú bé đi quán võ, xếp ly rượu ấm, thở hắt, ngỡ ngàng vì phở quê.</p>
 <hr>
-    <h3>Links:</h3>
-        <p>
-            <a href="https://leetcode.com/explore/" target="_blank" style="color: orange; font-weight: bold;">This</a> is a link that opens in a new tab
-        </p>
-        <!--The href specifies the URL or path that a hyperlink (<a>) or certain other elements (like <link>) points to-->
+    <h2 id="Link" class="textcenter">Links:</h2>
+        <p><a href="https://leetcode.com/explore/" target="_blank" style="color: orange; font-weight: bold;">This</a> is a link that opens in a new tab</p>
         <p><a href="https://leetcode.com/explore/" target="_self" style="color: red; font-weight: bold;">This</a> is a link that opens in the same tab</p>
         <p><a href="https://leetcode.com/explore/" target="_parent" style="color: blue; font-weight: bold;">This</a> is a link that opens in the parent frame</p>
         <p><a href="https://leetcode.com/explore/" target="_top" style="color: greenyellow; font-weight: bold;">This</a> is a link that opens in the full body of the window</p>
+        <!--The href specifies the URL or path that a hyperlink (<a>) or certain other elements (like <link>) points to-->
         <!-- Common values for 'target':
         _self → Default. Opens in the same tab.
 
@@ -50,9 +68,9 @@
         framename → Opens in a specific frame if you named it.-->
     
 <hr>
-    <h3>Divisions:</h3>        
+    <h2 id="Division" class="textcenter">Divisions:</h2>        
 
-        <div> This is a division aka a grouped element</div><br>
+        <div> This is a "division" -> a grouped element. Short form &lt;div&gt;</div><br>
         <!--<div> is a generic container element in HTML. Non-semantic, its main purpose is to group other elements together so you can apply CSS styling or JavaScript logic to that group.-->
         <div class="boxcenter">
             <div id="idtest">
@@ -63,16 +81,16 @@
             </div>
         </div>
 <hr>
-    <h3>Images and Headings:</h3>        
+    <h2 id="Image&Heading" class="textcenter">Images and Headings:</h2>        
    
         <div title="This is an image tooltip", class="imagett"> <!--The "tilte" attribute works with every element, it defines extra info when hovered-->
             <img src="canhcut.png" alt="This is an alt text" width="150" height="150"> <!--This is an image, alt = alternative text that replaces the unloaded image-->
         </div><br>
 
-        <div title="This is an image link"><a href="https://github.com" target="_blank"><img src="https://cdn3.iconfinder.com/data/icons/inficons/512/github.png" width="150" height="150" alt="This is a github redirect link"></a></div>
+        <div title="This is an image link"><a href="https://github.com" target="_blank"><img src="GitHubicon.png" width="150" height="150" alt="This is a github redirect link" style="border-radius: 50% ;"></a></div>
+        <!--border-radius rounds things up; border-radius: [insert pixels or percentage]-->
 
-
-        <div class="headings">
+        <div id="headings">
             <h1>This is the first heading</h1> <!--This is the largest size-->
             <h2>This is the second heading</h2>
             <h3>This is the third heading</h3>
@@ -82,9 +100,9 @@
         </div>
 
 <hr>
-    <h3>Paragraphs and styles:</h3>
+    <h2 id="Paragraph&style" class="textcenter">Paragraphs and styles:</h2>
 
-        <p>This is a normal paragraph</p> <!--Paragraph = semantic meaning, raw text = loose content-->
+        <p>This is a paragraph. Short form &lt;p&gt;</p> <!--Paragraph = semantic meaning, raw text = loose content-->
         
         <div class="boxcenter">
             <p class="amongus">This is a paragraph with a class. A class is a reusable label. Can be applied to many elements.<br>
@@ -93,8 +111,6 @@
                 &lt;p class="highlight"&gt;Second&lt;/p&gt;<br>
             </p>
         </div>
-
-        <p style="color: darkorange; font-size: 30px;">This is a paragraph with the style attribute</p> <!--multiple styles in 1 line is possible-->
     
         <p style="background-color: blue; color: white; display: inline-block;">This is a paragraph with the background-color attribute with the display of inline-block</p>
     
@@ -107,7 +123,7 @@
         <p style="display:inline-block; border:3px solid;">This is a paragraph with a border of 3px</p> <!--border: [thickness] [style] [color]-->
 
 <hr>
-    <h3>Plain texts:</h3>
+    <h2 id="Plain text" class="textcenter">Plain texts:</h2>
         <small>This is a small text</small> <!--Reduces the size of the text?--><br>
         <mark>This is a marked text</mark> <!--Highlighter--><br>
         <del>This is a deleted text</del> <!--Strikethrough--><br>
@@ -128,7 +144,7 @@
         <p>This is an <abbr title="Abbreviation">Abbr</abbr></p><br>
             
         <p>This is a pre-formatted text:</p><!--Renders the exact same way the code should look in your coding space-->
-<pre class="poem" style="border: black solid 1px; display: inline-flex;">
+<pre class="pretext" style="border: black solid 1px; display: inline-flex;">
 Time     Action
 10:00    Start
 10:30    Break 
@@ -136,13 +152,15 @@ Time     Action
 
 
         
-        <p>This is an artwork by me:</p>
+        <p style="text-align: center;">This is an artwork by me:</p>
         
-        <img src="masterpiece.png" alt="Finest piece of art" width="600" height="300">
+        <div class="boxcenter"><img src="masterpiece.png" alt="Finest piece of art" width="600" height="300"></div>
         
-        <p><cite>The combination of everything you could ever imagined</cite> by JoeHockens</p> <!--Cite is used to define the title of a creative work-->
+        <p style="text-align: center;"><cite>The combination of everything you could ever imagine</cite> by JoeHockens</p> <!--Cite is used to define the title of a creative work-->
         
-        <bdo dir="rtl">This text is written from right to left</bdo> <!--basically reverse text-->
+        <p><bdo dir="rtl">This text is written from right to left</bdo></p>
+        <p><bdo dir="ltr">This text is written from left to right</bdo></p>
+        <!--basically reverse text-->
         
         <p style="color: rgb(255,255,0);">This is a paragraph that uses RGB</p>
         <!--rgb(red, green, blue)-->
@@ -160,11 +178,29 @@ Time     Action
         
         <p style="color: #ff0000;">This is a paragraph that uses Hexadecimal Notation (HEX values)</p>
         <!--#RRGGBB (hexadecimal notation for red, green, blue);(00–FF) is equivalent to 0–255 in RGB.-->
+<hr>
+    <h2 id="Button" class="textcenter">Buttons:</h2>
 
-            <address style="display:inline-block ;border: 1px solid purple; color: darkorchid;"> <!--defines the contact information for the author/owner of a document or an article, it can be anything: email address, URL, physical address, phone number, social media handle, etc-->
+        <p>These buttons work on click:</p>
+        <button class="button" onclick="alert('This uses JavaScript!!')"><img class="png" src="canhcut.png" title="Alert"></button>
+        <button class="button" onclick="window.location.href='https://dictionary.cambridge.org';"><img class="png" src="CambridgeDictionaryIcon.png" title="CambridgeDictionaryIcon"></button>
+        <button class="button" onclick="console.log('Hi console!')"><img class="png" src="console-21.png" title="Prints to the console"></button><br>
+        
+        <p>These buttons work on hover</p>
+        <button class="button" title="MouseEnter" onmouseenter="console.log('I was hovered!')"></button><!--Prints on enter-->
+        <button class="button" title="Mouseleave" onmouseleave="console.log('The mouse left me!')"></button><!--Prints on leave-->
+        <button class="button" title="MouseMove" onmousemove="console.log('I was moved!')"></button> <!--Prints everytime the mouse moved inside of it-->
+        
+<hr>
+    <h2 id="" class="textcenter"></h2>
+
+        <div class="boxright">
+            <address style="display:inline-block ;border: 1px solid purple; color: darkorchid; margin: 5px;"> <!--defines the contact information for the author/owner of a document or an article, it can be anything: email address, URL, physical address, phone number, social media handle, etc-->
                 This is an address<br>
                 Written by JoeHockens<br>
-                Check me out on discord:<a href="https://discord.gg/kg9Ey3cJ" target="_blank" style="color: darkblue;"> MyDiscordServer</a>
-            </address><br>
+                Check me out on discord: <a href="https://discord.gg/kg9Ey3cJ" target="_blank" style="color: darkblue;">MyDiscordServer</a>
+            </address>
+        </div>
+        <br>
 </body>
 </html>
