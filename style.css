@@ -12,21 +12,32 @@ Flexbox usage:
 */
 
 /*Websites' default font-family is Times New Roman*/
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 body{
     background: white;
-    color: rgb(78, 70, 70);
+    color: black;
     font-family: Arial, Helvetica, sans-serif; /*sets new default font, the original default font is Times New Roman.*/
 }
 
 body.dark{
-    background: rgb(48, 56, 133);
-    color:white
+    background: rgb(49, 55, 105);
+    color:white;
 }
 
 body > h2{ /*gets all the h2 tags 1 level deep in body, think of it as mining down 1 level and looking for the things you need.*/
     color: red;
     text-shadow: 1px 1px black;
 }
+
+.backgroundtest{
+    background-image: url(IMAGES/BACKGROUND.png);
+    background-repeat: no-repeat; /*prevents from repeating, when the image is not big enough to cover it repeats itself*/
+    background-size: cover; /*covers the entire page*/ /*to stretch to fit the entire element, set the background-size to 100% 100%*/
+    background-attachment: fixed; /*to make sure the entire element is always covered*/
+    
+}
+
 /*----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 .boxcenter{
     display: flex;
@@ -40,6 +51,11 @@ body > h2{ /*gets all the h2 tags 1 level deep in body, think of it as mining do
 
 .textcenter{
     text-align: center;
+    color: red;
+}
+
+body.dark .textcenter{
+    color: rgb(0, 255, 0);
 }
 
 .png{

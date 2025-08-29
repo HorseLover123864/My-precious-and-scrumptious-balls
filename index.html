@@ -18,7 +18,7 @@
 
 <body id="body">
     <h1 style="color: gold; text-shadow: 2px 1px 2px black, 2px 1px 1px darkgoldenrod;">This is the body</h1><br>
-    <!--text-shadow's syntax: text-shadow: offset-x offset-y blur-radius color;
+    <!--(text-shadow: offset-x offset-y blur-radius color;)
     
     offset-x → horizontal shadow position (positive = right, negative = left).
 
@@ -206,17 +206,19 @@ Time     Action
 <hr>
     <h2 id="Image&Heading" class="textcenter">Images and Headings:</h2><!--IMAGE&HEADINGS-IMAGE&HEADINGS-IMAGE&HEADINGS-IMAGE&HEADINGS-IMAGE&HEADINGS-IMAGE&HEADINGS--->
    
-        <div style="display: flex; gap: 25px">
+        <div style="display: flex; gap: 15px;">
         
             <div title="This is a gif" class="imagett">
-                <img src="https://media.tenor.com/0Qwt9sOgaG8AAAAM/meme-horse.gif" width="150" height="300">
+                <img src="IMAGES/horse-alerted.gif" width="125" height="250">
             </div>
 
-            <div title="This is another gif"><img src="https://media.tenor.com/0pZkpZFmXEgAAAAM/uma-musume.gif" width="300" height="300"></div>
-            <div title="This is another gif"><img src="https://media.tenor.com/t6izAvf5JBMAAAAj/pretty-derby-matikane.gif" width="300" height="300"></div>
+            <div title="This is another gif"><img src="IMAGES/tokai-tokai-teio.gif" width="250" height="250"></div>
+            <div title="This is another gif"><img src="IMAGES/pretty-derby-matikane.gif" width="250" height="250"></div>
+            <div title="This is another gif"><img src="IMAGES/satono-diamond-uma-musume.gif" width="250" height="250"></div>
+
             <div title="This is an image" class="imagett" > <!--The "tilte" attribute works with every element, it defines extra info when hovered-->
             
-                <img loading="lazy" src="IMAGES/canhcut.png" alt="This is an alt text" width="150" height="150"> <!--This is an image, alt = alternative text that replaces the unloaded image-->
+                <img loading="lazy" src="IMAGES/canhcut.png" alt="This is an alt text" width="100" height="100"> <!--This is an image, alt = alternative text that replaces the unloaded image-->
             
             </div><br>
 
@@ -228,12 +230,33 @@ Time     Action
             
             
         </div>
-        
 
+        <br>
+        <p>Try clicking on the iphone in the image</p>
+        <div title="this is an image map">
+            <img src="IMAGES/phonedogstaremad.jpg" width="150" height="150" usemap="#testmap">
+                <map name="testmap">
+                    <area shape="poly" coords="10, 75, 30, 150, 70, 150, 50, 75 " href="https://www.apple.com/iphone/" target="_blank" alt="Iphone">
+                    <!--coords for Rectangle: [x1,y1,x2,y2] = top-left and bottom-right ,respectively.
+                        coords for Circle: [x,y,radius] = target 1 point and summon a circle around that point.
+                        coords for Polygon: [x1,y1, x2,y2,... xn,yn] = connect them to form a polygon.
+
+                        Coords only works on <area> inside a <map>.
+                        
+                        <area> can also bind javascript.
+                    -->
+                </map>
+        </div>
+        
+        <br>
 
 
         <br>
-        <p><img src="IMAGES/canhcut.png" style="float:left; width: 42px; height: 42px;">This image floats to the left of the text</p>
+        <p><img src="IMAGES/canhcut.png" style="float:left; width: 30px; height: 30px;">This image floats to the left of the text</p>
+        <br>
+
+        <p>This will redirect to a background image test:<a href="backgroundtest.html">Background_Test</a> </p>
+
         <br>
         <div id="headings">
             <h1>This is the first heading</h1> <!--This is the largest size-->
@@ -291,7 +314,7 @@ Time     Action
 
 <hr>
         <div>
-            <address style="display:inline-block ;border: 1px solid purple; color: darkorchid; margin: 5px;"> <!--defines the contact information for the author/owner of a document or an article, it can be anything: email address, URL, physical address, phone number, social media handle, etc-->
+            <address style="display:inline-block ;border: 3px solid rgb(255, 0, 0); color: rgb(0, 140, 255); margin: 5px; padding: 10px"> <!--defines the contact information for the author/owner of a document or an article, it can be anything: email address, URL, physical address, phone number, social media handle, etc-->
                 This is an address<br>
                 Written by JoeHockens<br>
                 Check me out on discord: <a href="https://discord.gg/kg9Ey3cJ" target="_blank" style="color: darkblue;">MyDiscordServer</a>
